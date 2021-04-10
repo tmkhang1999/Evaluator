@@ -8,7 +8,9 @@ The main function to write, evalexp, entails calling functions that simplify, bi
 
 `Length 1 Pattern Examples`
 > (or true) => true
+> 
 > (or false) => false
+> 
 > (or x) => x
 > (and true) => true
 > (and false) => false
