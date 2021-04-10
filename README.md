@@ -10,29 +10,7 @@ The main function to write, evalexp, entails calling functions that simplify, bi
 > (or true) => true<br /> (or false) => false<br /> (or x) => x<br /> (and true) => true<br /> (and false) => false<br /> (and x) => x<br /> (not false) => true<br /> (not true) => false<br /> (not (and x y)) => (or (not x) (not y))<br /> (not (or x y)) => (and (not x) (not y))<br /> (not (not x)) => x<br />
 
 `Length 2 Pattern Examples`
-> (or x false) => x
-> 
-> (or false x) => x
-> 
-> (or true x) => true
-> 
-> (or x true) => true
-> 
-> (and x false) => false
-> 
-> (and false x) => false
-> 
-> (and x true) => x
-> 
-> (and true x) => x
+> (or x false) => x<br /> (or false x) => x<br /> (or true x) => true<br /> (or x true) => true<br /> (and x false) => false<br /> (and false x) => false<br /> (and x true) => x<br /> (and true x) => x<br />
 
 `Length 3 Pattern Examples`
-> (or x y true) => true
-> 
-> (or x false y) => (or x y)
-> 
-> (and false x y) => false
-> 
-> (and x true y) => (and x y)
-> 
-> [... and so on ...]
+> (or x y true) => true<br /> (or x false y) => (or x y)<br /> (and false x y) => false<br /> (and x true y) => (and x y)<br /> [... and so on ...]
